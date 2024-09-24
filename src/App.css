@@ -1,0 +1,179 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  background-color: #282c34;
+  color: white;
+  position: relative;
+}
+
+.header h1 {
+  margin: 0 20px;
+  font-size: 40px;
+  font-family: "Pacifico", cursive;
+}
+
+.icon {
+  font-size: 40px;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.header:hover .icon {
+  transform: scale(1.2);
+  color: #61dafb;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
+  background-color: #282c34;
+  color: white;
+  font-size: 16px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.item-adder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #add8e6; /* Light blue background */
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.item-adder p {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.item-adder form {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.item-adder input,
+.item-adder select,
+.item-adder button {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.item-adder input:focus,
+.item-adder select:focus {
+  outline: none;
+  border-color: #61dafb;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.item-adder button {
+  background-color: #61dafb;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+  border-radius: 15px; /* Rounded edges */
+}
+
+.item-adder button:hover {
+  background-color: #21a1f1;
+  transform: scale(1.05);
+}
+
+.table-container {
+  display: flex;
+  justify-content: center;
+  margin: 0 20px; /* No top margin, margin only on left and right */
+  padding: 20px; /* Padding around the table */
+  border-radius: 10px; /* Optional: rounded corners for the container */
+}
+
+.item-table {
+  width: 100%;
+  max-width: 600px;
+  border-collapse: collapse;
+  background-color: #add8e6; /* Light blue background for the table */
+  color: black; /* Black text color for readability */
+}
+
+.item-table th,
+.item-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.item-table th {
+  text-align: left;
+}
+
+.item-table tr:nth-child(even) {
+  background-color: #e0ffff; /* Light blue for even rows */
+}
+
+.remove-btn {
+  background: none;
+  border: none;
+  color: #ff6f6f; /* Red color for delete icon */
+  cursor: pointer;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.remove-btn:hover {
+  color: #ff3b3b; /* Darker red on hover */
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.content {
+  flex: 1; /* Allow content to grow and take available space */
+}
+
+.sort-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background-color: #f1f1f1; /* Background color for the sort controls */
+  padding: 10px;
+  border-top: 1px solid #ddd; /* Border to separate from content */
+  margin-top: auto; /* Pushes footer to the bottom */
+  margin-bottom: 70px; /* Space above the footer */
+}
+
+.sort-controls select,
+.sort-controls button {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.sort-controls select {
+  background-color: #ffffff; /* White background for the dropdown */
+}
+
+.sort-controls button {
+  background-color: #ff6f6f; /* Red background for the clear button */
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.sort-controls button:hover {
+  background-color: #ff3b3b; /* Darker red on hover */
+}
